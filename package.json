@@ -9,19 +9,25 @@
     "lint": "next lint"
   },
   "dependencies": {
+    "@moonwave99/fretboard.js": "^0.2.13",
+    "@tombatossals/react-chords": "^0.2.10",
+    "@types/react-burger-menu": "^2.8.7",
+    "fretboards": "^0.5.0",
+    "next": "14.1.0",
     "react": "^18",
+    "react-burger-menu": "^3.0.9",
     "react-dom": "^18",
-    "next": "14.1.0"
+    "react-icons": "^5.0.1"
   },
   "devDependencies": {
-    "typescript": "^5",
     "@types/node": "^20",
     "@types/react": "^18",
     "@types/react-dom": "^18",
     "autoprefixer": "^10.0.1",
+    "eslint": "^8",
+    "eslint-config-next": "14.1.0",
     "postcss": "^8",
     "tailwindcss": "^3.3.0",
-    "eslint": "^8",
-    "eslint-config-next": "14.1.0"
+    "typescript": "^5"
   }
 }
