@@ -7,6 +7,8 @@ export default function Chord() {
   const fretboardRef = useRef<HTMLElement>(null);
   const [root, setRoot] = useState('C');
   const [chord, setChord] = useState('I_Maj7');
+  const [selectedValues, setSelectedValues] = useState({ root: 'C', chord: 'I_Maj7' });
+
 
   useEffect(() => {
     console.log(root, chord);
@@ -72,10 +74,14 @@ export default function Chord() {
 
   const handleRootChange = (event: React.ChangeEvent<HTMLSelectElement>) => {
     setRoot(event.target.value);
+    const newRoot = event.target.value;
+    setSelectedValues((prev) => ({ ...prev, root: newRoot }));
   };
 
   const handleChordChange = (event: React.ChangeEvent<HTMLSelectElement>) => {
     setChord(event.target.value);
+    const newChord = event.target.value;
+    setSelectedValues((prev) => ({ ...prev, chord: newChord }));
   };
 
   return (
@@ -107,6 +113,10 @@ export default function Chord() {
           <option value='VI_min7'>VImin7</option>
           <option value='VII_min7b5'>VIImin7b5</option>
         </select>
+      </div>
+      <div className='text-center mt-4'>
+        <span>{selectedValues.root}メジャースケール上の</span>
+        <span>{selectedValues.chord.replace(/_/g, '')}</span>
       </div>
       <div className='overflow-x-auto'>
         <figure ref={fretboardRef} className='flex-none'></figure>
