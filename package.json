@@ -13,7 +13,7 @@
     "@tombatossals/react-chords": "^0.2.10",
     "@types/react-burger-menu": "^2.8.7",
     "fretboards": "^0.5.0",
-    "next": "15.5.27",
+    "next": "16.4.2",
     "react": "^18",
     "react-burger-menu": "^3.0.9",
     "react-dom": "^18",
