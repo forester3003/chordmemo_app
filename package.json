@@ -13,7 +13,7 @@
     "@tombatossals/react-chords": "^0.2.10",
     "@types/react-burger-menu": "^2.8.7",
     "fretboards": "^0.5.0",
-    "next": "15.5.28",
+    "next": "15.5.29",
     "react": "^18",
     "react-burger-menu": "^3.0.9",
     "react-dom": "^18",
@@ -25,9 +25,21 @@
     "@types/react-dom": "^18",
     "autoprefixer": "^10.0.1",
     "eslint": "^8",
-    "eslint-config-next": "16.4.5",
+    "eslint-config-next": "15.5.29",
     "postcss": "^8",
     "tailwindcss": "^3.3.0",
     "typescript": "^5"
+  },
+  "overrides": {
+    "next": {
+      "postcss": "^8.5.32"
+    },
+    "@typescript-eslint/typescript-estree": {
+      "minimatch": "^11.0.1"
+    }
+  },
+  "resolutions": {
+    "next/postcss": "^8.5.32",
+    "**/@typescript-eslint/typescript-estree/minimatch": "^11.0.1"
   }
 }
